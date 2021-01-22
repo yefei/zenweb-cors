@@ -1,0 +1,35 @@
+{
+  "name": "@jiango/cors",
+  "version": "1.0.0",
+  "description": "jiango cors module",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "YeFei",
+    "email": "316606233@qq.com"
+  },
+  "keywords": [
+    "jiango",
+    "koa",
+    "cors"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yefei/jiango-node-cors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yefei/jiango-node-cors/issues"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "jiango": "^1.8.5"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "debug": "^4.3.1"
+  }
+}
