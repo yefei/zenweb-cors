@@ -1,7 +1,7 @@
 {
-  "name": "@jiango/cors",
+  "name": "@zenweb/cors",
   "version": "1.0.0",
-  "description": "jiango cors module",
+  "description": "zenweb cors module",
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -12,21 +12,21 @@
     "email": "316606233@qq.com"
   },
   "keywords": [
-    "jiango",
+    "zenweb",
     "koa",
     "cors"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yefei/jiango-node-cors.git"
+    "url": "git+https://github.com/yefei/zenweb-cors.git"
   },
   "bugs": {
-    "url": "https://github.com/yefei/jiango-node-cors/issues"
+    "url": "https://github.com/yefei/zenweb-cors/issues"
   },
   "devDependencies": {
     "eslint": "^7.16.0",
-    "jiango": "^1.8.5"
+    "zenweb": "^1.0.1"
   },
   "dependencies": {
     "@koa/cors": "^3.1.0",

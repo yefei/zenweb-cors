@@ -1,19 +1,19 @@
-# jiango-node-cors
-jiango cors module
+# zenweb-cors
+zenweb cors module
 
 ## Quick start
 
 ```bash
-$ npm i @jiango/cors
+$ npm i @zenweb/cors
 ```
 
 app.js
 ```js
 'use strict';
 
-const app = module.exports = require('jiango').create();
+const app = module.exports = require('zenweb').create();
 
-app.setup('@jiango/cors', {
+app.setup('@zenweb/cors', {
   origin: '*',
 });
 
