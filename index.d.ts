@@ -1,4 +1,5 @@
 import { Options } from '@koa/cors';
+import { Core } from '@zenweb/core';
 
 export type CorsOptions = Options;
 

@@ -9,17 +9,9 @@ $ npm i @zenweb/cors
 
 app.js
 ```js
-'use strict';
-
-const app = module.exports = require('zenweb').create();
-
-app.setup('@zenweb/cors', {
-  origin: '*',
+export const app = create({
+  cors: {
+    origin: '*',
+  }
 });
-
-app.router.get('/', ctx => {
-  ctx.body = 'ok';
-});
-
-app.start();
 ```

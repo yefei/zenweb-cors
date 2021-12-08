@@ -1,15 +1,9 @@
-'use strict';
-
-const debug = require('debug')('zenweb:cors');
-const cors = require('@koa/cors');
+import cors from '@koa/cors';
 
 /**
- * @param {import('zenweb').Core} core 
+ * @param {import('@zenweb/core').Core} core 
  * @param {object} [options]
  */
-function setup(core, options) {
-  debug('options: %o', options);
-  core.koa.use(cors(options));
+export function setup(core, options) {
+  core.use(cors(options));
 }
-
-module.exports = setup;
