@@ -2,18 +2,13 @@
   "name": "@zenweb/cors",
   "version": "2.0.0",
   "description": "zenweb cors module",
-  "type": "module",
-  "exports": "./index.js",
-  "engines": {
-    "node": ">=16.0.0"
-  },
-  "typings": "index.d.ts",
+  "exports": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
   "files": [
-    "index.js",
-    "index.d.ts"
+    "dist"
   ],
   "scripts": {
-    "lint": "eslint . --max-warnings 0",
+    "prepublishOnly": "rm -fr dist && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
@@ -34,8 +29,8 @@
     "url": "https://github.com/yefei/zenweb-cors/issues"
   },
   "devDependencies": {
-    "@zenweb/core": "^2.0.1",
-    "eslint": "^7.16.0"
+    "@types/koa__cors": "^3.1.0",
+    "@zenweb/core": "^2.1.2"
   },
   "dependencies": {
     "@koa/cors": "^3.1.0"
