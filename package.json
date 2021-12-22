@@ -8,8 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "prepublishOnly": "rm -fr dist && tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "tsc --build --clean && tsc"
   },
   "author": {
     "name": "YeFei",
@@ -29,10 +28,10 @@
     "url": "https://github.com/yefei/zenweb-cors/issues"
   },
   "devDependencies": {
-    "@types/koa__cors": "^3.1.0",
     "@zenweb/core": "^2.1.2"
   },
   "dependencies": {
+    "@types/koa__cors": "^3.1.0",
     "@koa/cors": "^3.1.0"
   }
 }
