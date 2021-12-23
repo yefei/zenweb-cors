@@ -1,11 +1,13 @@
-import * as cors from '@koa/cors';
+import * as koacors from '@koa/cors';
 import { Options as CorsOption } from '@koa/cors';
-import { Core } from '@zenweb/core';
+import { SetupFunction } from '@zenweb/core';
 
 export {
   CorsOption
 }
 
-export function setup(core: Core, option?: CorsOption) {
-  core.use(cors(option));
+export default function setup(option?: CorsOption): SetupFunction {
+  return function cors(setup) {
+    setup.middleware(koacors(option));
+  }
 }
