@@ -1,6 +1,6 @@
 {
   "name": "@zenweb/cors",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "zenweb cors module",
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -28,10 +28,12 @@
     "url": "https://github.com/yefei/zenweb-cors/issues"
   },
   "devDependencies": {
-    "@zenweb/core": "^2.3.1"
+    "@zenweb/core": "^3.5.1",
+    "rimraf": "^4.4.0",
+    "typescript": "^4.9.5"
   },
   "dependencies": {
-    "@koa/cors": "^3.1.0",
-    "@types/koa__cors": "^3.1.0"
+    "@koa/cors": "^3",
+    "@types/koa__cors": "^3.3.1"
   }
 }
